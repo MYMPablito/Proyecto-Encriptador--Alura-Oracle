@@ -4,9 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <script type="text/javascript" src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Cifrado</title>
 </head>
 <body>
-    
+    <input type="text" id="textoEncriptado"/>
+    <textarea name="resultado" id="textoDesencriptado" cols="30" rows="10"></textarea>
+    <button type="button" id="botonEncriptado">Encriptar</button>
+    <button type="button" id="botonDesencriptado">Desencriptar</button>
+    <button type="button" id="botonCopiar">Copiar</button>
 </body>
+<script>
+    var boton = document.querySelector("#botonEncriptado");
+    boton.onclick = encriptar;
+
+    var boton2 = document.querySelector("#botonDesencriptado");
+    boton2.onclick = desencriptar;
+
+    var boton3 = document.querySelector("#botonCopiar");
+    boton3.onclick = copiar;
+</script>
 </html>
