@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script type="text/javascript" src="./script.js"></script>
-    <link rel="stylesheet" href="./style.css" />
+    <script type="text/javascript" src="./js/script.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Cifrado</title>
 </head>
 <body>
@@ -14,7 +14,35 @@
     <button type="button" id="botonEncriptado">Encriptar</button>
     <button type="button" id="botonDesencriptado">Desencriptar</button>
     <button type="button" id="botonCopiar">Copiar</button>
+
+
+<header>
+<img src="./imgs/logo_pequeño.png" alt="img_logo" />
+
+</header>
+<main>
+    <section class="seccion1">
+        <textarea class="textarea" placeholder="Escribe tú texto aquí"></textarea>
+        <div class="contenedor_botones">
+            <input type="button" value="Encriptar" class="boton_encriptar" />
+            <input type="button" value="Desencriptar" class="boton_desencriptar" />
+        </div>
+    </section>
+    <section class="seccion2">
+        <div class="contenedor_imagen">
+            <img src="./imgs/Muñeco.png" alt="Muñeco" />
+        </div>
+        <div class="contenedor_subtitulo">
+            <h3>No se encontró ningún mensaje</h3>
+        </div>
+        <div class="contenedor_parrafo">
+            <p>Escribe el texto que deseas encriptar o desencriptar</p>
+        </div>
+    </section>
+</main>
+<footer>BY PABLO MATIAS FERNANDEZ MAZA</footer>
 </body>
+
 <script>
     var boton = document.querySelector("#botonEncriptado");
     boton.onclick = encriptar;
